@@ -1,0 +1,19 @@
+extends layout
+
+block body
+  div.container
+    div(class='navbar navbar-fixed-top')
+      div.container-fluid
+        ul(class='nav navbar-nav')
+          li
+            a(href='') Useful Shit
+    div.row
+      h1.text-center Twenty Five Cents
+    hr
+    div.row
+      div(ng-view)
+
+  script(src='/js/lib/angular/angular.js')
+  script(src='/js/app.js')
+  script(src='/js/controllers.js')
+  script(src='/js/services.js')

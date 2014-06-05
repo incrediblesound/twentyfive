@@ -1,0 +1,40 @@
+div.row
+  div.col-md-4
+    h2 Find a Cause
+    p Search through causes both national and local to find people making change you believe in.
+  div.col-md-4
+    h2 Give Support
+    p Support a cause by pledging twenty-five cents a month. Think twenty-five cents isn't enough? Of course not! Tell your friends about my-two-cents and build support for causes you believe in.
+  div.col-md-4
+    h2 Find Supporters
+    p Are you an organization doing charitable work? Is your company or non-profit organization trying to change the world for the better? Register with my-two-cents to find supporters now.
+div.row
+  div.col-md-4
+    h3 Member login
+    div.form-group
+      input.form-control(ng-model='form.username' placeholder='Username')
+    div.form-group
+      input.form-control(type='password' ng-model='form.password' placeholder='Password')
+    div.form-group
+      select.form-control(name='type' ng-model='form.type')
+        option(value='user') User
+        option(value='organization') Organization
+    button(class='btn btn-default', ng-click='login()') Login
+  div.col-md-4
+    h3 Register
+    div.form-group
+      input.form-control(ng-model='form.username' placeholder='Username')
+    div.form-group
+      input.form-control(type='password' ng-model='form.password' placeholder='Password')
+    div.form-group
+      select.form-control(name='type' ng-model='form.type')
+        option(value='user') User
+        option(value='organization') Organization
+    button(class='btn btn-default', ng-click='register()') Register
+  div.col-md-4
+    h3 More Information:
+    hr
+    div.row
+      a(href='' class='btn btn-default') Privacy
+      a(href='' class='btn btn-default') Tax Benefits
+      a(href='' class='btn btn-default') Our Process
