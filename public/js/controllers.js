@@ -1,8 +1,26 @@
 
-function IndexCtrl($scope,$http, $routeParams, services) {
-  $scope.form = {};
-  $scope.login = function() {
+function IndexCtrl($scope, $http, $location, services) {
+  $scope.reg = {};
+  $scope.login = {};
+  $scope.register = function() {
+    if($scope.reg.type === 'user') {
+      $http.post('/newuser', $scope.reg).success(function(data){
+        $location.url('/newuser');
+      })
+    } else {
+      $http.post('/newcause', $scope.reg).success(function(data){
+        $location.url('/newcause');
+      })
+    }
   }
+  $scope.login = function(){}
+}
+
+function UserCtrl($scope) {
+
+}
+
+function CauseCtrl($scope) {
 
 }
 

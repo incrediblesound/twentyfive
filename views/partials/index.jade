@@ -12,22 +12,22 @@ div.row
   div.col-md-4
     h3 Member login
     div.form-group
-      input.form-control(ng-model='form.username' placeholder='Username')
+      input.form-control(ng-model='login.username' placeholder='Username')
     div.form-group
-      input.form-control(type='password' ng-model='form.password' placeholder='Password')
+      input.form-control(type='password' ng-model='login.password' placeholder='Password')
     div.form-group
-      select.form-control(name='type' ng-model='form.type')
+      select.form-control(name='type' ng-model='login.type')
         option(value='user') User
         option(value='organization') Organization
     button(class='btn btn-default', ng-click='login()') Login
   div.col-md-4
     h3 Register
     div.form-group
-      input.form-control(ng-model='form.username' placeholder='Username')
+      input.form-control(ng-model='reg.username' placeholder='Username')
     div.form-group
-      input.form-control(type='password' ng-model='form.password' placeholder='Password')
+      input.form-control(type='password' ng-model='reg.password' placeholder='Password')
     div.form-group
-      select.form-control(name='type' ng-model='form.type')
+      select.form-control(name='type' ng-model='reg.type')
         option(value='user') User
         option(value='organization') Organization
     button(class='btn btn-default', ng-click='register()') Register

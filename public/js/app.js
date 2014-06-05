@@ -7,6 +7,14 @@ angular.module('myApp', ['myApp.services']).
         templateUrl: 'partials/index',
         controller: IndexCtrl
       }).
+      when('/newuser',{
+        templateUrl: 'partials/newuser',
+        controller: UserCtrl
+      }).
+      when('/newcause',{
+        templateUrl: 'partials/newcause',
+        controller: CauseCtrl
+      }).
       otherwise({
         redirectTo: '/'
       });
